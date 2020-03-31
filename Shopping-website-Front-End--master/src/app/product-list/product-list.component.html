@@ -1,0 +1,231 @@
+<app-nav-bar></app-nav-bar>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.h
+{
+    width: 50%;
+      margin-left: 20%
+}
+.j
+{
+    margin-left: 180px;
+    font-weight: 800;
+  }
+.k
+{
+width:100%;
+height:50px;
+margin-top:0px;
+}
+.p
+{
+    margin-left: 10px;
+    width: 230px;
+    height:250px;
+    background-color:#e6f0ff;
+    border-radius: 10px;
+    border-bottom:blue;
+}
+.po
+{
+    background-color:#e6f0ff;
+    margin-left: 10px;
+    border-radius: 10px;
+
+
+
+
+}
+.do
+{
+    background-color:white;
+       border-radius: 10px;
+    margin-left:40px;
+    margin-top:30px;
+
+}
+.d
+{
+    background-color: #e6f0ff;
+   width: 230px;
+    height:250px;
+    border-radius: 10px;
+    margin-left:20px;
+
+}
+.a
+{
+    display: flex;
+}
+.r
+{
+    margin-left: 100px;
+margin-top: 10px;
+}
+.o
+{
+
+    margin-left:100px;
+    margin-top:0px;
+}
+.l
+{
+    margin-left:60px;
+
+}
+.d{
+    display: flex;
+}
+.y
+{
+    height:150px;
+    width: 140px;
+    margin-left:40px;
+    padding-top:10px;
+}
+.x
+{
+    height:290px;
+
+}
+.u
+{
+    border-radius:20px;
+    border:2px solid black;
+}
+.k{
+    padding-left:0px;
+    padding-right: 0px;
+
+}
+.t
+{
+    border-bottom: 7px solid black;
+    margin-left:0px;
+
+}
+.g
+{
+    margin-left:50px;
+    margin-top:40px;
+}
+
+
+</style>
+</head>
+
+  <body>
+      <div class="container-fluid">
+          <div class="row">
+      <div class =" col-sm-12" style="background-color:#383838; ">
+        <form>
+                <div class="input-group mb-3 mt-3 h">
+                        <input type="text" class="form-control" placeholder="Search" id="mail" name="email">
+                        <div class="input-group-append">
+                          <span class="input-group-text bg-light" href="#"><b><i class="fa fa-search " style="color:#303030"></i></b></span>
+                        </div>
+                      </div>
+                    </form>
+                      </div>
+
+                      </div>
+
+                      </div>
+                      <div class="container-fluid k ">
+                          <div class="row ">
+
+                          <div class="col-sm-12 ">
+                      <nav class="navbar navbar-expand-sm t  " style="background-color:#ecc6c6 ">
+                          <ul class="navbar-nav ">
+                              <li class="nav-item">
+                                  <a class="nav-link j  " routerLink="/home" href="#" style="color:#383838"><b><span class="badge badge-dark"><i class="fas fa-home"></i></span>&nbsp;&nbsp;&nbsp;Home</b></a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link j"  (click)="showCategory('Electronics')" style="color:#383838;cursor: pointer"><b><span class="badge badge-dark"><i class="material-icons" style="font-size: 15px;">devices</i></span>&nbsp;&nbsp;&nbsp;Electronics</b></a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link  j "(click)="showCategory('Clothing')" style="color:#383838;cursor:pointer"><b><span class="badge badge-dark"><i class="material-icons" style="font-size: 15px;">group</i></span>&nbsp;&nbsp;&nbsp;Clothing</b></a>
+                                    </li>
+
+                                        <li class="nav-item">
+                                                <a class="nav-link  j" (click)="showCategory('Book')" style="color:#383838;cursor: pointer"><b><span class="badge badge-dark"><i class="fa fa-book"style="font-size: 15px;"></i></span>&nbsp;&nbsp;&nbsp;Books</b></a>
+                                            </li>
+                          </ul>
+                      </nav>
+                      </div>
+                      </div>
+                      </div>
+
+
+                              <div class="container-fluid " style="display: inline-flex;padding-top:10px;padding-left:0px;padding-right:0px;">
+                          <div class="col-sm-3  ml-0 " style="background-color:#383838">
+
+<!--<h5 class="l pt-5"><b>Price Range</b></h5>
+<form class="g">
+    <input type="checkbox" name="range" value="0">&nbsp;&nbsp;&nbsp;<b>0-500</b><br /><br />
+    <input type="checkbox" name="range" value="0">&nbsp;&nbsp;&nbsp;<b>500-1000</b><br /><br />
+    <input type="checkbox" name="range" value="0">&nbsp;&nbsp;&nbsp;<b>1000-2000</b><br /><br />
+    <input type="checkbox" name="range" value="0">&nbsp;&nbsp;&nbsp;<b>More Than 2000</b><br /><br />
+
+</form>-->
+<div class="card col-sm-10 mt-5 ml-4 u bg-light">
+
+        <div class="card-body">
+          <h2 class="card-title ml-4"><b>Price Range</b></h2>
+          <hr/>
+          <form class="g">
+               <!-- <input type="radio"(change)="showpricefilters($event,0,500)" name="range" value="0">&nbsp;&nbsp;&nbsp;<b>0-500</b><br /><br />-->
+                <input type="radio" (change)="showpricefilters($event,500,1000)" name="range" value="0">&nbsp;&nbsp;&nbsp;<b>500-1000</b><br /><br />
+                <input type="radio" (change)="showpricefilters($event,1000,2000)" name="range" value="0">&nbsp;&nbsp;&nbsp;<b>1000-2000</b><br /><br />
+                <input type="radio"  (change)="showpricefilters($event,2000,4000)"name="range" value="0">&nbsp;&nbsp;&nbsp;<b>2000-4000</b><br /><br />
+                <input type="radio" (change)="showpricefilters($event,4000,15000)"name="range" value="0">&nbsp;&nbsp;&nbsp;<b>Above 4000</b><br /><br />
+             <!--   <input type="radio" (change)="showpricefilters($event,15000,30000)"name="range" value="0">&nbsp;&nbsp;&nbsp;<b>Above 15000</b><br /><br />-->
+
+            </form>
+
+        </div>
+      </div>
+
+
+                          </div>
+
+                    <div class="col-sm-9 bg-light">
+                       <div class="row">
+                      <div class="card col-sm-2 do" *ngFor="let y of result">
+                            <img class="card-img-top pt-3 x" src="../../assets/images/{{y.image}}" >
+                            <hr />
+                            <div class="card-body">
+                              <pre class="card-text"><b>Rs. {{y.productPrice}}</b></pre>
+                                 <pre><b>{{y.productName}}</b></pre>
+                                 <div class="row">
+
+                              <button type="button" href="#" class="b btn btn-text-light"style="background-color:#383838;color:white  "(click)="addproduct(y.productid)">Add to Cart</button>
+
+                              <button type="button"  class="b btn btn-bg-light btn-text-light"style="color:black "(click)="viewdetails(y.productid)" >View Details</button>
+
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+
+                      </div>
+                      </body>
+                      </html>
+
+
+

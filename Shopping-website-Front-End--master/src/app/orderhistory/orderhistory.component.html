@@ -1,0 +1,83 @@
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<div class="container-fluid o " style="background-color:#383838 ">
+  <div class="row ">
+    <div class="col-sm-12 " style="display: inline-flex;">
+      <h1 class="j mt-4"><b><i>ShoppingBee!</i></b></h1>
+
+      <h3 class="k  ml-auto h"><b>100% SECURE</b></h3>
+    </div>
+  </div>
+</div>
+<div class="container-fluid  ">
+  <div class="row ">
+    <div class="col-sm-12 ">
+
+      <h1 class="text-dark ml-auto " ><b><span style="margin-left:740px;">ORDER HISTORY</span></b></h1>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-sm-8 bg-light">
+
+        <div *ngFor="let p of cart">
+
+          <div class="item1" style="display: flex;">
+            <div><img src="../../assets/images/{{p.products.image}}"></div>
+            <div style="margin-left:200px;margin-top:70px; "><p><b>Product Name:</b> {{p.products.productName}}</p>
+              <p><b>Product Quantity:&nbsp;&nbsp;</b>
+
+                &nbsp;<span>{{p.quantity}}</span>&nbsp;&nbsp;
+              <div ><b>Order Placed On: </b>{{p.date}}</div>
+              <br />
+              <div><b>Net Amount: Rs.</b>{{p.products.productPrice*p.quantity}}</div>
+              <br />
+             </div>
+
+
+            <hr />
+            <hr />
+          </div>
+        </div>
+        <br/>
+
+
+        <!--      <div class="item1">-->
+        <!--        <div><img src="assets/shirt4.jpg"></div>-->
+        <!--        <div ><p>Men's T-shirt4</p>-->
+        <!--          <span>Qty:1</span>&nbsp;<span>Size:M</span><br><br/>-->
+        <!--          <button class="btn btn-danger">Remove</button></div>-->
+        <!--        <div>Price:Rs.600</div>-->
+
+        <!--      </div>-->
+
+
+
+
+
+      </div> <!-- This is col-sm-4 div --->
+
+
+      <!--   <div class="col-sm-4 column8">
+           <div class="bag p-2">PRICE DETAILS</div>
+           <div class="price py-2">
+             <div>Bag Total</div>
+             <div>Rs.1200</div>
+           </div>-->
+
+    </div>  <!-- This is row div -->
+  </div>  <!--- This is container div -->
+

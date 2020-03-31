@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .c
+  {
+      width: 100%;
+      height:70px;
+
+  }
+  .b
+  {
+    margin-left: 820px;
+    height:40px;
+
+  }
+  .n
+  {
+    margin-left: 10px;
+    height:40px;
+
+  }
+
+  .h
+  {
+      width: 50%;
+      margin-left: 20%
+  }
+  .j
+  {
+      margin-left: 160px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid " style="background-color:#383838">
+    <div class=row>
+            <div class=" col-sm-12" style="display:inline-flex;">
+<h4 class="mt-3 text-light"><i><b>Welcome to ShoppingBee!</b></i></h4>
+
+<button type="button" class="btn btn-light btn-text-black ml-auto mt-4" routerLink="/add"><b><span class="badge badge-dark"><i class="fa fa-plus"></i></span>&nbsp;&nbsp;Add Products</b></button>
+<button type="button" class="btn btn-light btn-text-black ml-2 mt-4 " routerLink="/profile"><b><span class="badge badge-dark"><i class="fa fa-user"></i></span>&nbsp;&nbsp;My Profile</b></button>
+<button type="button" (click)="showcart()" class="btn btn-light btn-text-black  ml-2 mt-4"><b><span class="badge badge-dark"><i class="fa fa-shopping-cart" ></i></span>&nbsp;&nbsp;My Cart</b></button>
+<button type="button" class=" btn-text-black  ml-2 mt-4" (click)="logout()"style="background-color:#f2d9e6"><b><span class="badge badge-dark"><i class="fa fa-sign-out"></i></span>&nbsp;&nbsp;Log Out</b></button>
+</div>
+</div>
+</div>
+</body>
+</html>
